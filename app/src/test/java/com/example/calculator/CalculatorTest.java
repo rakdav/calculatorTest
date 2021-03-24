@@ -1,5 +1,6 @@
 package com.example.calculator;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -26,4 +27,7 @@ public class CalculatorTest
         assertEquals(3,calc.Div(6,2));
         //assertEquals(0,calc.Add(1,0));
     }
+    @After
+    public void tearDown(){calc=null;}
+
 }

@@ -21,7 +21,7 @@ import static org.junit.Assert.*;
 @RunWith(AndroidJUnit4.class)
 public class ExampleInstrumentedTest {
     @Test
-    public void saveandReadValues() throws Exception
+    public void SaveAndReadValues() throws Exception
     {
         Context context= InstrumentationRegistry.getContext();
         SharedPreferences sharedPreferences=context.getSharedPreferences("test",0);
@@ -36,5 +36,7 @@ public class ExampleInstrumentedTest {
         Values readvalues=saveValueHelper.readValues();
         assertTrue(saveValues.equalsTovalue(readvalues));
     }
+
+
 
 }
